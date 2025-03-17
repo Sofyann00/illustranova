@@ -98,12 +98,12 @@ export function Navbar() {
         <div className="flex items-center gap-x-2 ml-4 lg:ml-0">
         <img 
                 src="/app_icon.png" 
-                alt="secureChaining Logo"
+                alt="illustranova Logo"
                 width={32}
                 height={32}
                 className="brightness-0 invert"
               />
-          <span className="text-xl font-bold">secureChaining</span>
+          <span className="text-xl font-bold">illustranova</span>
         </div>
 
         <nav className="mx-6 hidden lg:flex items-center space-x-4 lg:space-x-6">

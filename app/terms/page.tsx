@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - PT INFINITI TEKNOLOGI INDONESIA',
-  description: 'Terms of Service and conditions for using secureChaining services',
+  title: 'Terms of Service - PT RISET TEKNOLOGI INTERNET',
+  description: 'Terms of Service and conditions for using illustranova services',
 }
 
 export default function TermsPage() {
@@ -23,7 +23,7 @@ export default function TermsPage() {
                 1. Agreement to Terms
               </h2>
               <p className="text-muted-foreground">
-                By accessing and using the services provided by PT INFINITI TEKNOLOGI INDONESIA (hereinafter referred to as &quot;secureChaining&quot;), you accept and agree to be bound by the terms and provisions of this agreement.
+                By accessing and using the services provided by PT RISET TEKNOLOGI INTERNET (hereinafter referred to as &quot;illustranova&quot;), you accept and agree to be bound by the terms and provisions of this agreement.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ export default function TermsPage() {
                 2. Products and Services
               </h2>
               <p className="text-muted-foreground">
-                secureChaining provides authentic sneakers and related footwear products. All product listings, including prices, availability, and specifications, are subject to change without prior notice. We guarantee the authenticity of all products sold through our platform.
+                illustranova provides authentic sneakers and related footwear products. All product listings, including prices, availability, and specifications, are subject to change without prior notice. We guarantee the authenticity of all products sold through our platform.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function TermsPage() {
                 5. Limitation of Liability
               </h2>
               <p className="text-muted-foreground">
-                While we guarantee product authenticity, secureChaining shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services, including but not limited to sizing issues or personal preferences.
+                While we guarantee product authenticity, illustranova shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services, including but not limited to sizing issues or personal preferences.
               </p>
             </div>
 
@@ -79,13 +79,13 @@ export default function TermsPage() {
               <div className="text-muted-foreground">
                 <p>For any questions about these Terms of Service, please contact us at:</p>
                 <div className="mt-2">
-                  <p>PT INFINITI TEKNOLOGI INDONESIA</p>
+                  <p>PT RISET TEKNOLOGI INTERNET</p>
                   <p>Gedung Is Plaza Lt. 5</p>
                   <p>Jl Pramuka Kav 150, Utan Kayu Utara</p>
                   <p>Matraman, Jakarta Timur</p>
                   <p>DKI Jakarta, Indonesia</p>
-                  <p>Email: admin@secureChaining.com</p>
-                  <p>Phone: (021) 60288761</p>
+                  <p>Email: admin@illustranova.com</p>
+                  <p>Phone: (021) 52067542</p>
                 </div>
               </div>
             </div>

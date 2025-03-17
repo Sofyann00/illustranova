@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - PT INFINITI TEKNOLOGI INDONESIA',
-  description: 'Privacy Policy for secureChaining services and customer data protection',
+  title: 'Privacy Policy - PT RISET TEKNOLOGI INTERNET',
+  description: 'Privacy Policy for illustranova services and customer data protection',
 }
 
 export default function PrivacyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
                 1. Information We Collect
               </h2>
               <p className="text-muted-foreground">
-                secureChaining collects personal information including but not limited to: name, email address, phone number, shipping address, shoe size preferences, purchase history, and payment information when you make a purchase or create an account on our platform.
+                illustranova collects personal information including but not limited to: name, email address, phone number, shipping address, shoe size preferences, purchase history, and payment information when you make a purchase or create an account on our platform.
               </p>
             </div>
 
@@ -95,13 +95,13 @@ export default function PrivacyPage() {
               <div className="text-muted-foreground">
                 <p>For any questions about this Privacy Policy, product authenticity, or our data practices, please contact us at:</p>
                 <div className="mt-2">
-                  <p>PT INFINITI TEKNOLOGI INDONESIA</p>
+                  <p>PT RISET TEKNOLOGI INTERNET</p>
                   <p>Gedung Is Plaza Lt. 5</p>
                   <p>Jl Pramuka Kav 150, Utan Kayu Utara</p>
                   <p>Matraman, Jakarta Timur</p>
                   <p>DKI Jakarta, Indonesia</p>
-                  <p>Email: support@secureChaining.com</p>
-                  <p>Phone: (021) 60288761</p>
+                  <p>Email: support@illustranova.com</p>
+                  <p>Phone: (021) 52067542</p>
                 </div>
               </div>
             </div>

@@ -11,17 +11,17 @@ export function Footer() {
             <div className="flex items-center gap-x-2">
               <img 
                 src="/app_icon.png" 
-                alt="secureChaining Logo"
+                alt="illustranova Logo"
                 width={32}
                 height={32}
                 className="brightness-0 invert"
               />
-              <span className="text-xl font-bold">secureChaining</span>
+              <span className="text-xl font-bold">illustranova</span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              Your trusted cybersecurity partner for comprehensive digital protection. 
-              We specialize in penetration testing, vulnerability assessments, and security 
-              audits to safeguard your business against evolving cyber threats.
+              Your creative partner for stunning digital illustrations. 
+              We specialize in character design, vector art, UI illustrations, 
+              and custom visual content to bring your ideas to life with style and imagination.
             </p>
           </div>
 
@@ -61,22 +61,22 @@ export function Footer() {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <div className="text-sm text-muted-foreground">
-              <p className="font-medium text-foreground mb-2">Technical Support</p>
+              <p className="font-medium text-foreground mb-2">Creative Support</p>
               <div className="space-y-2">
                 <p>
                   <a
-                    href="mailto:admin@secureChaining.com"
+                    href="mailto:studio@illustranova.com"
                     className="hover:text-foreground transition-colors"
                   >
-                    admin@securechaining.com
+                    studio@illustranova.com
                   </a>
                 </p>
                 <p>
                   <a
-                    href="tel:021-60288761"
+                    href="tel:021-52067542"
                     className="hover:text-foreground transition-colors"
                   >
-                    021-60288761
+                    021-52067542
                   </a>
                 </p>
               </div>
@@ -85,7 +85,7 @@ export function Footer() {
 
           {/* Office Location section */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-6">Office Location</h3>
+            <h3 className="text-lg font-semibold mb-6">Studio Location</h3>
             <div className="text-sm text-muted-foreground">
               <p className="leading-relaxed">
                 Gedung Is Plaza Lt. 5,<br />
@@ -100,7 +100,7 @@ export function Footer() {
           {/* Copyright section */}
           <div className="col-span-1 md:col-span-4 mt-16 pt-8 border-t">
             <p className="text-sm text-muted-foreground text-center">
-              © {new Date().getFullYear()} PT INFINITI TEKNOLOGI INDONESIA.
+              © {new Date().getFullYear()} PT RISET TEKNOLOGI INTERNET.
             </p>
           </div>
         </div>

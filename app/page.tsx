@@ -2,7 +2,7 @@
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import { Button } from "@/components/ui/button"
-import { ChevronRight, Paintbrush, Palette, Layers, Sparkles } from "lucide-react"
+import { ChevronRight, Paintbrush, Palette, Layers, Sparkles, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { products } from "@/lib/data"
 import { Card, CardContent } from "@/components/ui/card"
@@ -59,7 +59,7 @@ export default function Home() {
   ])
 
   // Add ref for services section
-  const servicesRef = useRef<HTMLElement>(null)
+  const servicesRef = useRef<HTMLDivElement>(null)
   
   // Scroll handler function
   const scrollToServices = () => {
@@ -77,10 +77,9 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section - Illustration themed */}
-      <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
-        {/* Animated background elements */}
+      <section className="min-h-[90vh] relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-background to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-background to-background" />
           <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-tr from-purple-900/20 via-transparent to-blue-900/20" />
           
@@ -101,6 +100,17 @@ export default function Home() {
               </div>
             ))}
           </div>
+          
+          {/* Hero background image */}
+          <div className="absolute inset-0 opacity-20">
+            <Image 
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2064" 
+              alt="Illustration background"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
 
         <div className="relative max-w-5xl mx-auto px-4 py-20 text-center">
@@ -109,7 +119,7 @@ export default function Home() {
               <Palette className="h-12 w-12 text-purple-500" />
             </div>
           </div>
-          <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             Bring Your Ideas to Life
           </h1>
           <p className="mt-8 text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-200">
@@ -159,7 +169,7 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.slice(0, 3).map((product) => (
+            {products.slice(0, 6).map((product) => (
               <Link href={`/product/${product.id}`} key={product.id}>
                 <div className="group relative overflow-hidden rounded-xl aspect-[4/5] bg-black">
                   <Image
@@ -183,8 +193,9 @@ export default function Home() {
           
           <div className="mt-12 text-center">
             <Link href="/gallery">
-              <Button variant="outline" className="border-purple-500/30 hover:bg-purple-500/10">
+              <Button variant="outline" className="border-purple-500/30 hover:bg-purple-500/10 group">
                 View All Artwork
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>
@@ -192,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* Services Showcase - Illustration focused */}
-      <section ref={servicesRef} className="py-32 relative bg-black/5">
+      <div ref={servicesRef} className="py-32 relative bg-black/5">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5" />
         <div className="max-w-7xl mx-auto px-4 relative">
           <div className="text-center mb-16">
@@ -204,56 +215,48 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="relative">
-            <div ref={sliderRef} className="keen-slider overflow-visible">
-              {products.map((product) => (
-                <div key={product.id} className="keen-slider__slide">
-                  <Card className="group hover:shadow-xl transition-all duration-300 border border-purple-900/10 bg-gradient-to-b from-background to-black/5 overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="aspect-square relative overflow-hidden">
-                        <Image
-                          src={product.image}
-                          alt={product.name}
-                          fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                        <div className="absolute bottom-0 left-0 right-0 p-4">
-                          <div className="inline-block px-2 py-1 bg-purple-600 text-xs text-white rounded mb-2">
-                            {product.category}
-                          </div>
-                          <h3 className="text-xl font-semibold text-white">{product.name}</h3>
-                          <p className="mt-1 text-sm text-white/80">{formatPrice(product.price)}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {products.slice(6, 12).map((product) => (
+              <Link href={`/product/${product.id}`} key={product.id}>
+                <Card className="group hover:shadow-xl transition-all duration-300 border border-purple-900/10 bg-gradient-to-b from-background to-black/5 overflow-hidden h-full">
+                  <CardContent className="p-0">
+                    <div className="aspect-[3/2] relative overflow-hidden">
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="p-5">
+                      <div className="inline-block px-2 py-1 bg-purple-600/10 text-xs text-purple-600 rounded mb-2">
+                        {product.category}
+                      </div>
+                      <h3 className="text-xl font-semibold">{product.name}</h3>
+                      <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{product.description}</p>
+                      <div className="mt-4 flex justify-between items-center">
+                        <p className="font-medium">{formatPrice(product.price)}</p>
+                        <div className="h-8 w-8 rounded-full bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-500 transition-colors">
+                          <ArrowRight className="h-4 w-4 text-purple-500 group-hover:text-white transition-colors" />
                         </div>
                       </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
-            
-            {loaded && instanceRef.current && (
-              <div className="flex justify-center gap-2 mt-8">
-                {[...Array(Math.min(5, instanceRef.current.track.details.slides.length))].map((_, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => instanceRef.current?.moveToIdx(idx)}
-                    className={`w-3 h-3 rounded-full transition-colors ${currentSlide === idx ? 'bg-purple-500' : 'bg-purple-500/20'}`}
-                  />
-                ))}
-              </div>
-            )}
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
           
           <div className="mt-12 text-center">
             <Link href="/marketplace">
-              <Button className="bg-purple-600 hover:bg-purple-700">
+              <Button className="bg-purple-600 hover:bg-purple-700 group">
                 View All Illustration Services
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Process Section */}
       <section className="py-32 relative">
@@ -262,6 +265,9 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold">Our Creative Process</h2>
             <div className="mt-4 h-1 w-20 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full" />
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+              We follow a structured approach to bring your illustration projects to life
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -288,6 +294,9 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold">Why Choose Our Illustration Services</h2>
             <div className="mt-4 h-1 w-20 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full" />
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+              We combine artistic talent with professional service to deliver exceptional results
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -314,13 +323,16 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold">What Our Clients Say</h2>
             <div className="mt-4 h-1 w-20 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto rounded-full" />
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+              Hear from clients who have transformed their projects with our illustration services
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="p-6 rounded-2xl bg-gradient-to-b from-black/5 to-transparent border border-purple-900/10"
+                className="p-6 rounded-2xl bg-gradient-to-b from-black/5 to-transparent border border-purple-900/10 hover:border-purple-500/20 transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="h-12 w-12 rounded-full bg-purple-500/10 flex items-center justify-center">
@@ -346,8 +358,9 @@ export default function Home() {
             Our team of talented illustrators is ready to bring your creative vision to life.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 group">
               Get a Free Consultation
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>

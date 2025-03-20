@@ -23,7 +23,7 @@ export default function PrivacyPage() {
                 1. Information We Collect
               </h2>
               <p className="text-muted-foreground">
-                illustranova collects personal information including but not limited to: name, email address, phone number, shipping address, shoe size preferences, purchase history, and payment information when you make a purchase or create an account on our platform.
+                illustranova collects personal information including but not limited to: name, email address, phone number, shipping address, project requirements, design preferences, reference images, purchase history, and payment information when you commission artwork or create an account on our platform.
               </p>
             </div>
 
@@ -35,12 +35,12 @@ export default function PrivacyPage() {
                 We use your information to:
               </p>
               <ul className="list-disc ml-6 mt-2 text-muted-foreground space-y-1">
-                <li>Process your sneaker orders and provide customer support</li>
-                <li>Send order tracking and delivery updates</li>
-                <li>Notify you about new sneaker releases and restocks</li>
-                <li>Personalize your shopping experience based on your preferences</li>
-                <li>Verify product authenticity and maintain transaction records</li>
-                <li>Send promotional offers and newsletters (with your consent)</li>
+                <li>Process your illustration orders and provide creative support</li>
+                <li>Send project updates and delivery notifications</li>
+                <li>Notify you about new illustration services and portfolio updates</li>
+                <li>Personalize your experience based on your artistic preferences</li>
+                <li>Maintain records of your commissioned artwork and transactions</li>
+                <li>Send promotional offers and creative newsletters (with your consent)</li>
                 <li>Comply with legal obligations</li>
               </ul>
             </div>
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
                 3. Data Security
               </h2>
               <p className="text-muted-foreground">
-                We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.
+                We implement appropriate technical and organizational measures to protect your personal data and creative assets against unauthorized access, alteration, disclosure, or destruction.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
                 4. Data Retention
               </h2>
               <p className="text-muted-foreground">
-                We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law.
+                We retain your personal information and project details for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law or requested for portfolio purposes with your explicit consent.
               </p>
             </div>
 
@@ -71,11 +71,12 @@ export default function PrivacyPage() {
                 Under Indonesian data protection laws, you have the right to:
               </p>
               <ul className="list-disc ml-6 mt-2 text-muted-foreground space-y-1">
-                <li>Access your personal data</li>
+                <li>Access your personal data and project information</li>
                 <li>Correct inaccurate data</li>
                 <li>Request deletion of your data</li>
                 <li>Object to processing of your data</li>
                 <li>Withdraw consent for marketing communications</li>
+                <li>Request removal of your commissioned artwork from our portfolio</li>
               </ul>
             </div>
 
@@ -84,23 +85,32 @@ export default function PrivacyPage() {
                 6. Cookies and Tracking
               </h2>
               <p className="text-muted-foreground">
-                We use cookies and similar tracking technologies to enhance your shopping experience, remember your preferences, maintain your login status, analyze site traffic, and provide personalized sneaker recommendations based on your browsing history.
+                We use cookies and similar tracking technologies to enhance your experience on our illustration platform, remember your preferences, maintain your login status, analyze site traffic, and provide personalized artwork recommendations based on your browsing history.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-3">
-                7. Contact Information
+                7. Intellectual Property
+              </h2>
+              <p className="text-muted-foreground">
+                Unless otherwise specified in a written agreement, clients receive full ownership rights to the final artwork delivered. However, illustranova retains the right to display commissioned work in our portfolio, website, and social media for promotional purposes unless a confidentiality agreement is in place.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-semibold text-foreground mb-3">
+                8. Contact Information
               </h2>
               <div className="text-muted-foreground">
-                <p>For any questions about this Privacy Policy, product authenticity, or our data practices, please contact us at:</p>
+                <p>For any questions about this Privacy Policy, your commissioned artwork, or our data practices, please contact us at:</p>
                 <div className="mt-2">
                   <p>PT RISET TEKNOLOGI INTERNET</p>
                   <p>Gedung Is Plaza Lt. 5</p>
                   <p>Jl Pramuka Kav 150, Utan Kayu Utara</p>
                   <p>Matraman, Jakarta Timur</p>
                   <p>DKI Jakarta, Indonesia</p>
-                  <p>Email: support@illustranova.com</p>
+                  <p>Email: studio@illustranova.com</p>
                   <p>Phone: (021) 52067542</p>
                 </div>
               </div>

@@ -32,25 +32,25 @@ export default function TermsPage() {
                 2. Products and Services
               </h2>
               <p className="text-muted-foreground">
-                illustranova provides authentic sneakers and related footwear products. All product listings, including prices, availability, and specifications, are subject to change without prior notice. We guarantee the authenticity of all products sold through our platform.
+                illustranova provides professional illustration and design services including character design, vector portraits, UI illustrations, brand mascots, and other visual art solutions. All service listings, including prices, availability, and specifications, are subject to change without prior notice. We guarantee the quality and originality of all artwork created through our platform.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-3">
-                3. Warranty and Returns
+                3. Revisions and Satisfaction
               </h2>
               <p className="text-muted-foreground">
-                All products are guaranteed to be 100% authentic. Customers must inspect products upon delivery and report any defects within 48 hours. Returns are only accepted for authenticity issues or manufacturing defects, and items must be unworn, in original condition with all original packaging and tags attached.
+                All illustration services include a specified number of revision rounds as detailed in each service description. Additional revisions beyond the included amount may incur extra charges. Clients must provide clear feedback within 7 days of receiving draft artwork. We strive for complete client satisfaction and will work with you to ensure the final artwork meets your expectations within the agreed scope.
               </p>
             </div>
 
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-3">
-                4. Privacy and Data Protection
+                4. Intellectual Property Rights
               </h2>
               <p className="text-muted-foreground">
-                We collect and process personal data in accordance with Indonesian data protection laws. This includes shipping information, purchase history, and payment details. For more information, please refer to our Privacy Policy.
+                Upon full payment, clients receive the agreed-upon usage rights to the final artwork as specified in the service contract. Unless explicitly stated otherwise, illustranova retains the right to display the created artwork in our portfolio, website, and promotional materials. Clients are responsible for ensuring they have proper rights to any reference materials provided for the illustration process.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function TermsPage() {
                 5. Limitation of Liability
               </h2>
               <p className="text-muted-foreground">
-                While we guarantee product authenticity, illustranova shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services, including but not limited to sizing issues or personal preferences.
+                While we guarantee the originality and quality of our artwork, illustranova shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services, including but not limited to business losses, missed opportunities, or subjective artistic preferences beyond the agreed-upon project scope.
               </p>
             </div>
 
@@ -84,7 +84,7 @@ export default function TermsPage() {
                   <p>Jl Pramuka Kav 150, Utan Kayu Utara</p>
                   <p>Matraman, Jakarta Timur</p>
                   <p>DKI Jakarta, Indonesia</p>
-                  <p>Email: admin@illustranova.com</p>
+                  <p>Email: studio@illustranova.com</p>
                   <p>Phone: (021) 52067542</p>
                 </div>
               </div>

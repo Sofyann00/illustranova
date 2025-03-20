@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Us - illustranova',
-  description: 'Learn about illustranova, your trusted IT solutions partner in Indonesia',
+  description: 'Learn about illustranova, your creative illustration partner in Indonesia',
 }
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
             About illustranova
           </h1>
           <p className="text-sm text-muted-foreground italic mb-8">
-            Your Trusted IT Solutions Partner in Indonesia
+            Your Creative Illustration Partner in Indonesia
           </p>
 
           <section className="space-y-8">
@@ -23,7 +23,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-muted-foreground">
-                Founded with a commitment to digital excellence, illustranova has emerged as a leading IT solutions provider in Indonesia. Our journey began with a clear vision: to help businesses transform and thrive in the digital age through innovative technology solutions and expert services.
+                Founded with a passion for visual storytelling, illustranova has emerged as a leading illustration studio in Indonesia. Our journey began with a clear vision: to help businesses and individuals bring their ideas to life through stunning visual art. What started as a small team of passionate artists has grown into a creative powerhouse delivering exceptional illustration services across various industries.
               </p>
             </div>
 
@@ -32,12 +32,12 @@ export default function AboutPage() {
                 Why Choose Us
               </h2>
               <ul className="text-muted-foreground list-disc pl-5 space-y-2">
-                <li>Expert Development Team</li>
-                <li>Custom Software Solutions</li>
-                <li>Agile Development Methodology</li>
-                <li>Comprehensive IT Consulting</li>
-                <li>Reliable Technical Support</li>
-                <li>Proven Track Record</li>
+                <li>Talented Team of Professional Illustrators</li>
+                <li>Diverse Illustration Styles and Techniques</li>
+                <li>Collaborative Creative Process</li>
+                <li>Attention to Detail and Quality</li>
+                <li>Timely Delivery and Clear Communication</li>
+                <li>Portfolio of Successful Projects</li>
               </ul>
             </div>
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
                 Our Commitment
               </h2>
               <p className="text-muted-foreground">
-                At illustranova, we are committed to delivering exceptional IT solutions that drive business growth. Our team of skilled developers and consultants works tirelessly to understand your unique challenges and create tailored solutions that exceed expectations. We pride ourselves on building long-term partnerships and ensuring client success through innovation and technical excellence.
+                At illustranova, we are committed to delivering exceptional visual art that captures your vision and exceeds your expectations. Our team of skilled illustrators and designers works tirelessly to understand your unique needs and create tailored illustrations that communicate your message effectively. We pride ourselves on building long-term creative partnerships and ensuring client satisfaction through artistic excellence and technical precision.
               </p>
             </div>
 
@@ -55,21 +55,21 @@ export default function AboutPage() {
                 Our Services
               </h2>
               <ul className="text-muted-foreground list-disc pl-5 space-y-2">
-                <li>Custom Software Development</li>
-                <li>Web Application Development</li>
-                <li>Mobile App Development</li>
-                <li>IT Consulting</li>
-                <li>Cloud Solutions</li>
-                <li>Digital Transformation</li>
+                <li>Character Design and Illustration</li>
+                <li>Vector Portrait Illustration</li>
+                <li>UI/UX Illustration for Digital Products</li>
+                <li>Brand Mascot and Identity Design</li>
+                <li>Children's Book Illustration</li>
+                <li>Custom Digital Artwork</li>
               </ul>
             </div>
 
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-3">
-                Office Location
+                Studio Location
               </h2>
               <div className="text-muted-foreground">
-                <p>Visit our office:</p>
+                <p>Visit our creative studio:</p>
                 <div className="mt-2">
                   <p>illustranova</p>
                   <p>Gedung Is Plaza Lt. 5</p>
@@ -83,7 +83,7 @@ export default function AboutPage() {
 
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-3">
-                Business Hours
+                Studio Hours
               </h2>
               <div className="text-muted-foreground grid grid-cols-2 gap-4">
                 <div>
@@ -103,10 +103,10 @@ export default function AboutPage() {
                 Contact Information
               </h2>
               <div className="text-muted-foreground">
-                <p>Get in touch with us:</p>
+                <p>Get in touch with our creative team:</p>
                 <div className="mt-2 space-y-1">
                   <p>Phone: (021) 52067542</p>
-                  <p>Email: admin@illustranova.com</p>
+                  <p>Email: studio@illustranova.com</p>
                   <p>WhatsApp: +62 812-8845-8953</p>
                 </div>
               </div>

@@ -145,7 +145,7 @@ export default function Home() {
           {/* Category Pills */}
           <div className="mt-16 flex flex-wrap justify-center gap-3 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300">
             {categories.map((category) => (
-              <Link href={`/category/${category.name.toLowerCase().replace(/\s+/g, '-')}`} key={category.name}>
+              <Link href={`/marketplace`} key={category.name}>
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 hover:bg-purple-500/20 transition-colors">
                   {category.icon}
                   <span className="text-sm font-medium">{category.name}</span>
@@ -170,7 +170,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.slice(0, 6).map((product) => (
-              <Link href={`/product/${product.id}`} key={product.id}>
+              <Link href={`/marketplace`} key={product.id}>
                 <div className="group relative overflow-hidden rounded-xl aspect-[4/5] bg-black">
                   <Image
                     src={product.image}
@@ -192,7 +192,7 @@ export default function Home() {
           </div>
           
           <div className="mt-12 text-center">
-            <Link href="/gallery">
+            <Link href="/marketplace">
               <Button variant="outline" className="border-purple-500/30 hover:bg-purple-500/10 group">
                 View All Artwork
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -217,7 +217,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.slice(6, 12).map((product) => (
-              <Link href={`/product/${product.id}`} key={product.id}>
+              <Link href={`/marketplace`} key={product.id}>
                 <Card className="group hover:shadow-xl transition-all duration-300 border border-purple-900/10 bg-gradient-to-b from-background to-black/5 overflow-hidden h-full">
                   <CardContent className="p-0">
                     <div className="aspect-[3/2] relative overflow-hidden">
@@ -357,7 +357,7 @@ export default function Home() {
           <p className="text-lg text-muted-foreground mb-8">
             Our team of talented illustrators is ready to bring your creative vision to life.
           </p>
-          <Link href="/contact">
+          <Link href="mailto:admin@illustranova.com">
             <Button size="lg" className="bg-purple-600 hover:bg-purple-700 group">
               Get a Free Consultation
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

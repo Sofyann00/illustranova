@@ -12,8 +12,8 @@ import { FilterProvider } from "@/contexts/filter-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "illustranova - Professional Cybersecurity Services",
-  description: "Your trusted partner for professional cybersecurity services. Specializing in penetration testing, vulnerability assessments, security audits, and comprehensive protection for web applications, mobile apps, networks, and cloud infrastructure.",
+  title: "illustranova - Professional Illustration Services",
+  description: "Your trusted partner for professional Illustration services. Specializing in illustration, graphic design, and comprehensive protection for web applications, mobile apps, networks, and cloud infrastructure.",
   icons: {
     icon: "/favicon/favicon.ico",
     shortcut: "/favicon/favicon-16x16.png",
